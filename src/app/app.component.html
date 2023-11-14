@@ -1,0 +1,17 @@
+<h1 [hidden]="username === ''" >welcome {{username}} </h1>
+<p [hidden]="username !== ''">Please enter your username</p>
+<hr>
+<label>Enter username</label>
+<br>
+<input type="text" (input)="UsernameInputChanged($event)">
+<br>
+<label>Enter password</label>
+<br>
+<input type="password" (input)="PasswordInputChanged($event)">
+<br>
+<label>Retype password</label>
+<br>
+<input type="password" (input)="RetypeInputeChanged($event)">
+<br>
+<label [hidden]="isPasswordmatch || password === ''" >Password do not match</label>
+<label [hidden]="!isPasswordmatch" >Password match!</label>
