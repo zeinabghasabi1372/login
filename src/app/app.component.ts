@@ -18,6 +18,7 @@ export class AppComponent {
   public PasswordInputChanged (e: Event){
     this.password = (<HTMLInputElement>e.target).value;
   }
+  
   public RetypeInputeChanged (e: Event){
     this.Retypepassword = (<HTMLInputElement>e.target).value;
     // if(this.password !== this.Retypepassword){
